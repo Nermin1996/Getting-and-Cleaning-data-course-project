@@ -33,5 +33,5 @@ and standard deviation for each measurement
 independent tidy data set with the average of each variable for each activity and each subject
 
 ### **Setup**
-To run this project, just run the code included in the r script.R file.
+To run this project, just run the code included in the run_analysis.R file.
 
