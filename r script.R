@@ -1,7 +1,7 @@
 ## load the required packages 
 library(dplyr)
 
-## download the required file 7 unzipping 
+## download the required file & unzipping 
 URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 if(!file.exists("project.zip")){
   download.file(URL, destfile = "project.zip")
@@ -33,6 +33,7 @@ bound_data <- bind_rows(bound_test, bound_train)
 bound_data$id <- activity_labels[bound_data$id,2]
 bound_data <- rename(bound_data, "activity"="id")
 str(bound_data)
+
 ## selecting mean & std data
 mean_std <- select(bound_data, matches("subject|activity|mean|std"))
 
@@ -47,8 +48,10 @@ colnames(mean_std) <- sub(pattern="Body.Body", replacement = "Body.", colnames(m
 colnames(mean_std) <- sub(pattern="Gyro", replacement = "Gyroscope", colnames(mean_std))  
 colnames(mean_std) <- sub(pattern="Mag",replacement = ".Magnitude", colnames(mean_std)) 
 colnames(mean_std) <- sub(pattern="[Gg]ravity",replacement = ".gravity.", colnames(mean_std)) 
-colnames(mean_std) <- sub(pattern= "..gravity", replacement = ".gravity", colnames(mean_std))
+colnames(mean_std) <- sub(pattern= "\\..gravity", replacement = ".gravity", colnames(mean_std))
 
 colnames(mean_std)
-##grouping the data by subject then
-mean_std %>% group_by(subject,activity) %>% summarize_each(mean)
+##grouping the data by subject and creating independent tidy data set with the average of each variable for each activity and each subject
+tidy_data <- mean_std %>% group_by(subject,activity) %>% summarize_each(mean)
+tidy_data
+
