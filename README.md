@@ -1,26 +1,26 @@
 # Readme 
 ## **Getting and cleanining data course programming project** 
 
-###**Table of contents**:
-[Introduction - the project's aim]
-[Data source]
-[Technologies]
-[Project Desscription]
-[Setup]
+### **Table of contents**
+* [Introduction - the project's aim]
+* [Data source]
+* [Technologies]
+* [Project Desscription]
+* [Setup]
 
-###**Introduction - the project's aim**
+### **Introduction - the project's aim**
 This project is a peer-graded assignment for getting and cleaning data coursera course.
 The goal of this project is to prepare tidy dataset that can be used for later analysis.
 
-###**Data source**
+### **Data source**
 the source of this data is [UCI archive](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 which call for Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
-###**Technologies**
+### **Technologies**
 this project is created with **R 4.0.3**
 
-###**Project Description**
-the project prepares tidy dataset that can be used for downstream analysis in 7 successive steps summarized as the following: 
+### **Project Description**
+the project prepares tidy dataset that can be used for downstream analysis in 7 successive steps shown in R.script file and can be summarized as follows: 
 
 1-Download the required files.
 2-read the data txt files.
@@ -32,6 +32,6 @@ and standard deviation for each measurement
 7-From the data set in step 5, create a second,
 independent tidy data set with the average of each variable for each activity and each subject
 
-###**Setup**
+### **Setup**
 To run this project, just run the code in the R script.R file.
 
