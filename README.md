@@ -20,7 +20,7 @@ which calls for Human Activity Recognition database built from the recordings of
 This project is created with **R 4.0.3**
 
 ### **Project's Description**
-The project prepares tidy dataset that can be used for downstream analysis in 7 successive steps shown in R.script file and can be summarized as follows: 
+The project prepares tidy dataset that can be used for downstream analysis in 7 successive steps shown in **run_analysis.R** file and can be summarized as follows: 
 
 1. Download the required files.
 2. read the data txt files.
@@ -33,5 +33,5 @@ and standard deviation for each measurement
 independent tidy data set with the average of each variable for each activity and each subject
 
 ### **Setup**
-To run this project, just run the code included in the run_analysis.R file.
+To run this project, just run the code included in the **run_analysis.R** file.
 
