@@ -2,11 +2,11 @@
 ## **Getting and cleanining data course programming project** 
 
 ### **Table of contents**
-* [Introduction - the project's aim]
-* [Data source]
-* [Technologies]
-* [Project Desscription]
-* [Setup]
+* Introduction - the project's aim
+* Data source
+* Technologies
+* Project Desscription
+* Setup
 
 ### **Introduction - the project's aim**
 This project is a peer-graded assignment for getting and cleaning data coursera course.
