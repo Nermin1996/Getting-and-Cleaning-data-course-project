@@ -19,8 +19,8 @@ which calls for Human Activity Recognition database built from the recordings of
 ### **Technologies**
 this project is created with **R 4.0.3**
 
-### **Project Description**
-the project prepares tidy dataset that can be used for downstream analysis in 7 successive steps shown in R.script file and can be summarized as follows: 
+### **Project's Description**
+The project prepares tidy dataset that can be used for downstream analysis in 7 successive steps shown in R.script file and can be summarized as follows: 
 
 1. Download the required files.
 2. read the data txt files.
